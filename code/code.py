@@ -47,6 +47,7 @@ def is_func(func):        # is this function a counterexample, needs input in bl
                 if 1&temp==1:
                     vars.append(i+1)
                     cnt+=1
+                temp//=2
             vars+=[0]*(t-cnt)
 
             for y in range(math.factorial(t)):
